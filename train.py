@@ -6,8 +6,8 @@ from torch import optim
 from torch.autograd import Variable
 from torch.nn.utils import clip_grad_norm
 from torch.nn import functional as F
-from model import Encoder, Decoder, Seq2Seq
-from utils import load_dataset
+from src.attention.seq2seq.model import Encoder, Decoder, Seq2Seq
+from src.attention.seq2seq.utils import load_dataset
 
 
 def parse_arguments():
